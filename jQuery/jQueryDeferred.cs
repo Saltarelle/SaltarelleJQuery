@@ -269,8 +269,7 @@ namespace jQueryApi {
     /// </summary>
     [Imported]
     [IgnoreNamespace]
-    [IgnoreGenericArguments]
-   [ScriptName("Object")]
+    [ScriptName("Object")]
     public sealed class jQueryDeferred<TData> : IDeferred<TData> {
 
         private jQueryDeferred() {
@@ -428,7 +427,6 @@ namespace jQueryApi {
         /// <param name="doneCallback">The callback to invoke when the object is resolved.</param>
         /// <param name="failCallback">The callback to invoke when the object is rejected.</param>
         /// <returns>The current deferred object.</returns>
-        [IgnoreGenericArguments]
         public jQueryDeferred<TData> Then(Action<TData> doneCallback, Action<TData> failCallback) {
             return null;
         }
@@ -440,7 +438,6 @@ namespace jQueryApi {
         /// <param name="doneCallbacks">The callbacks to invoke when the object is resolved.</param>
         /// <param name="failCallbacks">The callbacks to invoke when the object is rejected.</param>
         /// <returns>The current deferred object.</returns>
-        [IgnoreGenericArguments]
         public jQueryDeferred<TData> Then(Action[] doneCallbacks, Action[] failCallbacks) {
             return null;
         }
@@ -452,7 +449,6 @@ namespace jQueryApi {
         /// <param name="doneCallbacks">The callbacks to invoke when the object is resolved.</param>
         /// <param name="failCallbacks">The callbacks to invoke when the object is rejected.</param>
         /// <returns>The current deferred object.</returns>
-        [IgnoreGenericArguments]
         public jQueryDeferred<TData> Then(Action<TData>[] doneCallbacks, Action<TData>[] failCallbacks) {
             return null;
         }

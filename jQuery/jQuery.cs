@@ -182,7 +182,6 @@ namespace jQueryApi {
         /// <param name="url">The endpoint to which the request is issued.</param>
         /// <returns>The jQueryXmlHttpRequest object.</returns>
         [ScriptName("ajax")]
-		[IgnoreGenericArguments]
         public static jQueryDataHttpRequest<TData> AjaxRequest<TData>(string url) {
             return null;
         }
@@ -194,7 +193,6 @@ namespace jQueryApi {
         /// <param name="options">The options and settings for the request to invoke.</param>
         /// <returns>The jQueryXmlHttpRequest object.</returns>
         [ScriptName("ajax")]
-		[IgnoreGenericArguments]
         public static jQueryDataHttpRequest<TData> AjaxRequest<TData>(string url, jQueryAjaxOptions options) {
             return null;
         }
@@ -205,7 +203,6 @@ namespace jQueryApi {
         /// <param name="options">The options and settings for the request to invoke.</param>
         /// <returns>The jQueryXmlHttpRequest object.</returns>
         [ScriptName("ajax")]
-		[IgnoreGenericArguments]
         public static jQueryDataHttpRequest<TData> AjaxRequest<TData>(jQueryAjaxOptions options) {
             return null;
         }
@@ -225,7 +222,6 @@ namespace jQueryApi {
         /// <typeparam name="TEvent">The type of the event to create.</typeparam>
         /// <returns>A new jQueryEvent object.</returns>
         [ScriptName("event")]
-		[IgnoreGenericArguments]
         public static TEvent CustomEvent<TEvent>(string eventName) where TEvent : jQueryEvent {
             return null;
         }
@@ -243,7 +239,6 @@ namespace jQueryApi {
         /// </summary>
         [PreserveCase]
         [ScriptName("Deferred")]
-		[IgnoreGenericArguments]
         public static jQueryDeferred<TData> DeferredData<TData>() {
             return null;
         }
@@ -263,7 +258,6 @@ namespace jQueryApi {
         /// <param name="initializer">An initializer callback to initialize the new deferred object.</param>
         [PreserveCase]
         [ScriptName("Deferred")]
-		[IgnoreGenericArguments]
         public static jQueryDeferred<TData> DeferredData<TData>(jQueryDeferredInitializer<TData> initializer) {
             return null;
         }
@@ -283,7 +277,6 @@ namespace jQueryApi {
         /// </summary>
         /// <param name="items">The array to iterate over.</param>
         /// <param name="callback">The callback to invoke for each item.</param>
-		[IgnoreGenericArguments]
         public static void Each<T>(List<T> items, ArrayIterationCallback<T> callback) {
         }
 
@@ -304,7 +297,6 @@ namespace jQueryApi {
         /// </summary>
         /// <param name="items">The array to iterate over.</param>
         /// <param name="callback">The callback to invoke for each item.</param>
-		[IgnoreGenericArguments]
         public static void Each<T>(List<T> items, ArrayInterruptableIterationCallback<T> callback) {
         }
 
@@ -376,7 +368,6 @@ namespace jQueryApi {
         /// <returns>The merged dictionary.</returns>
         [ScriptName("extend")]
         [ExpandParams]
-		[IgnoreGenericArguments]
         public static JsDictionary<TKey, TValue> ExtendDictionary<TKey, TValue>(JsDictionary<TKey, TValue> target, params JsDictionary<TKey, TValue>[] dictionaries) {
             return null;
         }
@@ -392,7 +383,6 @@ namespace jQueryApi {
         /// <returns>The merged dictionary.</returns>
         [ScriptName("extend")]
         [ExpandParams]
-		[IgnoreGenericArguments]
         public static JsDictionary<TKey, TValue> ExtendDictionary<TKey, TValue>(bool deep, JsDictionary<TKey, TValue> target, params JsDictionary<TKey, TValue>[] dictionaries) {
             return null;
         }
@@ -405,7 +395,6 @@ namespace jQueryApi {
         /// <returns>The merged object.</returns>
         [ScriptName("extend")]
         [ExpandParams]
-		[IgnoreGenericArguments]
         public static T ExtendObject<T>(T target, params T[] objects) {
             return default(T);
         }
@@ -419,7 +408,6 @@ namespace jQueryApi {
         /// <returns>The merged object.</returns>
         [ScriptName("extend")]
         [ExpandParams]
-		[IgnoreGenericArguments]
         public static T ExtendObject<T>(bool deep, T target, params T[] objects) {
             return default(T);
         }
@@ -561,7 +549,6 @@ namespace jQueryApi {
         /// <param name="url">The URL to request.</param>
         /// <returns>The jQueryXmlHttpRequest object.</returns>
         [ScriptName("get")]
-		[IgnoreGenericArguments]
         public static jQueryDataHttpRequest<TData> GetData<TData>(string url) {
             return null;
         }
@@ -573,7 +560,6 @@ namespace jQueryApi {
         /// <param name="callback">The callback to invoke with the response.</param>
         /// <returns>The jQueryXmlHttpRequest object.</returns>
         [ScriptName("get")]
-		[IgnoreGenericArguments]
         public static jQueryDataHttpRequest<TData> GetData<TData>(string url, AjaxCallback<TData> callback) {
             return null;
         }
@@ -586,7 +572,6 @@ namespace jQueryApi {
         /// <param name="callback">The callback to invoke with the response.</param>
         /// <returns>The jQueryXmlHttpRequest object.</returns>
         [ScriptName("get")]
-		[IgnoreGenericArguments]
         public static jQueryDataHttpRequest<TData> GetData<TData>(string url, object data, AjaxCallback<TData> callback) {
             return null;
         }
@@ -599,7 +584,6 @@ namespace jQueryApi {
         /// <param name="callback">The callback to invoke with the response.</param>
         /// <returns>The jQueryXmlHttpRequest object.</returns>
         [ScriptName("get")]
-		[IgnoreGenericArguments]
         public static jQueryDataHttpRequest<TData> GetData<TData>(string url, object data, AjaxRequestCallback<TData> callback) {
             return null;
         }
@@ -613,7 +597,6 @@ namespace jQueryApi {
         /// <param name="dataType">The type of data expected in the response.</param>
         /// <returns>The jQueryXmlHttpRequest object.</returns>
         [ScriptName("get")]
-		[IgnoreGenericArguments]
         public static jQueryDataHttpRequest<TData> GetData<TData>(string url, object data, AjaxCallback<TData> callback, string dataType) {
             return null;
         }
@@ -627,7 +610,6 @@ namespace jQueryApi {
         /// <param name="dataType">The type of data expected in the response.</param>
         /// <returns>The jQueryXmlHttpRequest object.</returns>
         [ScriptName("get")]
-		[IgnoreGenericArguments]
         public static jQueryDataHttpRequest<TData> GetData<TData>(string url, object data, AjaxRequestCallback<TData> callback, string dataType) {
             return null;
         }
@@ -671,7 +653,6 @@ namespace jQueryApi {
         /// <param name="url">The URL to request.</param>
         /// <returns>The jQueryXmlHttpRequest object.</returns>
         [ScriptName("getJSON")]
-		[IgnoreGenericArguments]
         public static jQueryDataHttpRequest<TData> GetJsonData<TData>(string url) {
             return null;
         }
@@ -683,7 +664,6 @@ namespace jQueryApi {
         /// <param name="callback">The callback to invoke with the response.</param>
         /// <returns>The jQueryXmlHttpRequest object.</returns>
         [ScriptName("getJSON")]
-		[IgnoreGenericArguments]
         public static jQueryDataHttpRequest<TData> GetJsonData<TData>(string url, AjaxCallback<TData> callback) {
             return null;
         }
@@ -696,7 +676,6 @@ namespace jQueryApi {
         /// <param name="callback">The callback to invoke with the response.</param>
         /// <returns>The jQueryXmlHttpRequest object.</returns>
         [ScriptName("getJSON")]
-		[IgnoreGenericArguments]
         public static jQueryDataHttpRequest<TData> GetJsonData<TData>(string url, object data, AjaxCallback<TData> callback) {
             return null;
         }
@@ -769,7 +748,6 @@ namespace jQueryApi {
         /// <param name="list">The list to look in.</param>
         /// <returns>The index of value if it is found; -1 if it is not.</returns>
         [ScriptName("inArray")]
-		[IgnoreGenericArguments]
         public static int InList<T>(T value, List<T> list) {
             return 0;
         }
@@ -863,7 +841,6 @@ namespace jQueryApi {
         /// <param name="secondList">The second list to merge.</param>
         /// <returns>The new list containing merged set of items.</returns>
         [ScriptName("merge")]
-		[IgnoreGenericArguments]
         public static List<T> MergeLists<T>(List<T> firstList, List<T> secondList) {
             return null;
         }
@@ -904,7 +881,6 @@ namespace jQueryApi {
         /// <param name="json">The json string.</param>
         /// <returns>The parsed document.</returns>
         [ScriptName("parseJSON")]
-		[IgnoreGenericArguments]
         public static TData ParseJsonData<TData>(string json) {
             return default(TData);
         }
@@ -1000,7 +976,6 @@ namespace jQueryApi {
         /// <param name="url">The URL to request.</param>
         /// <returns>The jQueryXmlHttpRequest object.</returns>
         [ScriptName("post")]
-		[IgnoreGenericArguments]
         public static jQueryDataHttpRequest<TData> PostRequest<TData>(string url) {
             return null;
         }
@@ -1012,7 +987,6 @@ namespace jQueryApi {
         /// <param name="callback">The callback to invoke with the response.</param>
         /// <returns>The jQueryXmlHttpRequest object.</returns>
         [ScriptName("post")]
-		[IgnoreGenericArguments]
         public static jQueryDataHttpRequest<TData> PostRequest<TData>(string url, AjaxCallback<TData> callback) {
             return null;
         }
@@ -1025,7 +999,6 @@ namespace jQueryApi {
         /// <param name="callback">The callback to invoke with the response.</param>
         /// <returns>The jQueryXmlHttpRequest object.</returns>
         [ScriptName("post")]
-		[IgnoreGenericArguments]
         public static jQueryDataHttpRequest<TData> PostRequest<TData>(string url, object data, AjaxCallback<TData> callback) {
             return null;
         }
@@ -1038,7 +1011,6 @@ namespace jQueryApi {
         /// <param name="callback">The callback to invoke with the response.</param>
         /// <returns>The jQueryXmlHttpRequest object.</returns>
         [ScriptName("post")]
-		[IgnoreGenericArguments]
         public static jQueryDataHttpRequest<TData> PostRequest<TData>(string url, object data, AjaxRequestCallback<TData> callback) {
             return null;
         }
@@ -1052,7 +1024,6 @@ namespace jQueryApi {
         /// <param name="dataType">The type of data expected in the response.</param>
         /// <returns>The jQueryXmlHttpRequest object.</returns>
         [ScriptName("post")]
-		[IgnoreGenericArguments]
         public static jQueryDataHttpRequest<TData> PostRequest<TData>(string url, object data, AjaxCallback<TData> callback, string dataType) {
             return null;
         }
@@ -1066,7 +1037,6 @@ namespace jQueryApi {
         /// <param name="dataType">The type of data expected in the response.</param>
         /// <returns>The jQueryXmlHttpRequest object.</returns>
         [ScriptName("post")]
-		[IgnoreGenericArguments]
         public static jQueryDataHttpRequest<TData> PostRequest<TData>(string url, object data, AjaxRequestCallback<TData> callback, string dataType) {
             return null;
         }
@@ -1170,7 +1140,6 @@ namespace jQueryApi {
         /// <returns>A deferred object representing the individual deferred objects.</returns>
         [ExpandParams]
         [ScriptName("when")]
-		[IgnoreGenericArguments]
         public static IDeferred<TData> WhenData<TData>(params IDeferred<TData>[] deferreds) {
             return null;
         }

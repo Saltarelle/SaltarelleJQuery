@@ -133,7 +133,6 @@ namespace jQueryApi {
     /// </summary>
     [Imported]
     [IgnoreNamespace]
-	[IgnoreGenericArguments]
     public interface IDeferred<TData> : IPromise {
 
         /// <summary>
@@ -207,7 +206,6 @@ namespace jQueryApi {
         /// </summary>
         /// <param name="successFilter">The filter to invoke when the deferred object is resolved.</param>
         /// <returns>The current deferred object.</returns>
-        [IgnoreGenericArguments]
         IDeferred<TTargetData> Pipe<TTargetData>(jQueryDeferredFilter<TTargetData, TData> successFilter);
 
         /// <summary>
@@ -216,7 +214,6 @@ namespace jQueryApi {
         /// <param name="successFilter">The filter to invoke when the deferred object is resolved.</param>
         /// <param name="failFilter">The filter to invoke when the deferred object is rejected.</param>
         /// <returns>The current deferred object.</returns>
-        [IgnoreGenericArguments]
         IDeferred<TTargetData> Pipe<TTargetData>(jQueryDeferredFilter<TTargetData, TData> successFilter, jQueryDeferredFilter<TTargetData> failFilter);
 
         /// <summary>
@@ -224,7 +221,6 @@ namespace jQueryApi {
         /// </summary>
         /// <param name="successChain">The filter to invoke when the deferred object is resolved.</param>
         /// <returns>The current deferred object.</returns>
-        [IgnoreGenericArguments]
         IDeferred<TTargetData> Pipe<TTargetData>(Func<TData, IDeferred<TTargetData>> successChain);
 
         /// <summary>

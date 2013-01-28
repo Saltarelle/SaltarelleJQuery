@@ -1958,7 +1958,6 @@ namespace jQueryApi {
         /// <param name="propertyName">The name of the property.</param>
         /// <returns>The value of the specified property.</returns>
         [ScriptName("prop")]
-		[IgnoreGenericArguments]
         public TValue GetProperty<TValue>(string propertyName) {
             return default(TValue);
         }
