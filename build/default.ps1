@@ -58,6 +58,7 @@ Task Build-NuGetPackages -Depends Determine-Version, Build-Solution {
 		<file src="$baseDir\jQuery\bin\Saltarelle.jQuery.dll" target="lib"/>
 		<file src="$baseDir\jQuery\bin\Saltarelle.jQuery.xml" target="lib"/>
 		<file src="$baseDir\jQuery\jquery-*.js" target=""/>
+		<file src="$baseDir\jQuery\jquery-*.map" target=""/>
 	</files>
 </package>
 "@ | Out-File -Encoding UTF8 "$outDir\jQuery.nuspec"
@@ -130,7 +131,7 @@ Task Determine-Version {
 Function Generate-VersionFile($Path, $Version) {
 	$Version = Get-DotNetVersion -RawVersion $Version
 @"
-[assembly: System.Reflection.AssemblyVersion("$($Version.Major).$($Version.Minor).0.0")]
+[assembly: System.Reflection.AssemblyVersion("$($Version.Major).0.0.0")]
 [assembly: System.Reflection.AssemblyFileVersion("$Version")]
 "@ | Out-File $Path -Encoding "UTF8"
 }

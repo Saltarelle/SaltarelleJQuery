@@ -1233,7 +1233,7 @@ namespace jQueryApi {
         /// <param name="duration">The duration in milliseconds for the effect.</param>
         /// <param name="callback">The callback to invoke upon completion.</param>
         /// <returns>The current jQueryObject.</returns>
-        public jQueryObject FadeIn(int duration, ActionWithContext callback) {
+        public jQueryObject FadeIn(TypeOption<int, EffectDuration> duration, ActionWithContext callback) {
             return null;
         }
 
