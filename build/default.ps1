@@ -58,6 +58,7 @@ Task Build-NuGetPackages -Depends Determine-Version, Build-Solution {
 		<file src="$baseDir\jQuery\bin\Saltarelle.jQuery.dll" target="lib"/>
 		<file src="$baseDir\jQuery\bin\Saltarelle.jQuery.xml" target="lib"/>
 		<file src="$baseDir\jQuery\jquery-*.js" target=""/>
+		<file src="$baseDir\jQuery\jquery-*.map" target=""/>
 	</files>
 </package>
 "@ | Out-File -Encoding UTF8 "$outDir\jQuery.nuspec"

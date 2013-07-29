@@ -1,3 +1,4 @@
+Use jQuery 1.10.2
 Updated compiler/runtime/web libraries to 2.3.0
 
 1.9.0
