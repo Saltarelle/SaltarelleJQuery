@@ -274,7 +274,7 @@ namespace jQueryApi {
             return null;
         }
 
-        [InlineCode("{$System.Threading.Tasks.Task}.fromPromise({this}, 0))")]
+        [InlineCode("{$System.Threading.Tasks.Task}.fromPromise({this}, 0)")]
         public TaskAwaiter<object> GetAwaiter() {
             return null;
         }
