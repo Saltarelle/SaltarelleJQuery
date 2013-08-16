@@ -101,7 +101,7 @@ namespace jQueryApi {
         /// <summary>
         /// Gets or sets the data to be sent to the server.
         /// </summary>
-        public TypeOption<JsDictionary<string, object>, Array> Data {
+        public TypeOption<JsDictionary<string, object>, Array, string> Data {
             get {
                 return null;
             }
