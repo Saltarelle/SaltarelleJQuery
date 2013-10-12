@@ -3,6 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "jQuery", "jQuery\jQuery.csproj", "{4A9F7CE0-5A45-4B28-AD01-05528709B6E4}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1B756A84-B36F-4E25-B660-D383B7510E98}"
+	ProjectSection(SolutionItems) = preProject
+		history.txt = history.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

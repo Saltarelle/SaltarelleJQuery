@@ -28,7 +28,7 @@ namespace jQueryApi {
         [IntrinsicProperty]
         public ReadyState ReadyState {
             get {
-                return ReadyState.Uninitialized;
+                return default(ReadyState);
             }
         }
 

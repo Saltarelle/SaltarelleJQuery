@@ -1042,6 +1042,17 @@ namespace jQueryApi {
         }
 
         /// <summary>
+        /// Wraps a DOM Element in a jQuery object
+        /// </summary>
+        /// <param name="element">The element to wrap.</param>
+        /// <returns>The resulting jQueryObject instance.</returns>
+        [ScriptAlias("$")]
+        public static jQueryObject Select(Element element)
+        {
+            return null;
+        }
+
+        /// <summary>
         /// Finds one or more DOM elements matching a CSS selector and wraps them into a
         /// <see cref="jQueryObject"/> instance.
         /// </summary>
