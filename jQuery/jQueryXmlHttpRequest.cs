@@ -104,7 +104,9 @@ namespace jQueryApi {
         /// </summary>
         /// <param name="callback">The callback to invoke.</param>
         /// <returns>The current request object.</returns>
-        public jQueryXmlHttpRequest Complete(AjaxCompletedCallback callback) {
+        [Obsolete("Deprecated since jQuery 1.8. Use Always() instead.")]
+        public jQueryXmlHttpRequest Complete(AjaxCompletedCallback callback)
+        {
             return null;
         }
 
@@ -126,7 +128,8 @@ namespace jQueryApi {
         /// <param name="doneCallbacks">The callbacks to invoke (in order).</param>
         /// <returns>The current request object.</returns>
         [ExpandParams]
-        public jQueryXmlHttpRequest Done(params Callback[] doneCallbacks) {
+        public jQueryXmlHttpRequest Done(params AjaxRequestCallback[] doneCallbacks)
+        {
             return null;
         }
 
@@ -135,6 +138,7 @@ namespace jQueryApi {
         /// </summary>
         /// <param name="callback">The callback to invoke.</param>
         /// <returns>The current request object.</returns>
+        [Obsolete("Deprecated since jQuery 1.8. Use Fail() instead.")]
         public jQueryXmlHttpRequest Error(AjaxErrorCallback callback) {
             return null;
         }
@@ -157,7 +161,8 @@ namespace jQueryApi {
         /// <param name="failCallbacks">The callbacks to invoke (in order).</param>
         /// <returns>The current request object.</returns>
         [ExpandParams]
-        public jQueryXmlHttpRequest Fail(params Callback[] failCallbacks) {
+        public jQueryXmlHttpRequest Fail(params AjaxErrorCallback[] failCallbacks)
+        {
             return null;
         }
 
@@ -217,7 +222,9 @@ namespace jQueryApi {
         /// </summary>
         /// <param name="callback">The callback to invoke.</param>
         /// <returns>The current request object.</returns>
-        public jQueryXmlHttpRequest Success(AjaxCallback callback) {
+        [Obsolete("Deprecated since jQuery 1.8. Use Done() instead.")]
+        public jQueryXmlHttpRequest Success(AjaxCallback callback)
+        {
             return null;
         }
 
@@ -226,7 +233,9 @@ namespace jQueryApi {
         /// </summary>
         /// <param name="callback">The callback to invoke.</param>
         /// <returns>The current request object.</returns>
-        public jQueryXmlHttpRequest Success(AjaxRequestCallback callback) {
+        [Obsolete("Deprecated since jQuery 1.8. Use Done() instead.")]
+        public jQueryXmlHttpRequest Success(AjaxRequestCallback callback)
+        {
             return null;
         }
 
