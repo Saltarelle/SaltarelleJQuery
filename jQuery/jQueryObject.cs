@@ -3671,7 +3671,8 @@ namespace jQueryApi {
         /// </summary>
         /// <param name="attributeName">The attribute to remove.</param>
         /// <returns>The current jQueryObject.</returns>
-        public jQueryObject RemoveAttr(string attributeName) {
+        [ScriptName("removeAttr")]
+        public jQueryObject RemoveAttribute(string attributeName) {
             return null;
         }
 
