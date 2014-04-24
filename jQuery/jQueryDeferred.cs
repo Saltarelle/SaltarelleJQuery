@@ -121,7 +121,6 @@ namespace jQueryApi {
         /// <param name="context">The context in which the callback is invoked.</param>
         /// <param name="args">The arguments to pass to the callbacks.</param>
         /// <returns>The current deferred object.</returns>
-        [ExpandParams]
         public jQueryDeferred RejectWith(object context, params object[] args) {
             return null;
         }
@@ -143,7 +142,6 @@ namespace jQueryApi {
         /// <param name="context">The context in which the callback is invoked.</param>
         /// <param name="args">The arguments to pass to the callbacks.</param>
         /// <returns>The current deferred object.</returns>
-        [ExpandParams]
         public jQueryDeferred ResolveWith(object context, params object[] args) {
             return null;
         }
@@ -382,7 +380,6 @@ namespace jQueryApi {
         /// <param name="context">The context in which the callback is invoked.</param>
         /// <param name="args">The arguments to pass to the callbacks.</param>
         /// <returns>The current deferred object.</returns>
-        [ExpandParams]
         public jQueryDeferred<TData> RejectWith(object context, params TData[] args) {
             return null;
         }
@@ -404,7 +401,6 @@ namespace jQueryApi {
         /// <param name="context">The context in which the callback is invoked.</param>
         /// <param name="args">The arguments to pass to the callbacks.</param>
         /// <returns>The current deferred object.</returns>
-        [ExpandParams]
         public jQueryDeferred<TData> ResolveWith(object context, params TData[] args) {
             return null;
         }
