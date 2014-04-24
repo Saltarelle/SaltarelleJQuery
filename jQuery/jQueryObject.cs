@@ -3059,9 +3059,8 @@ namespace jQueryApi {
         /// Returns a new jQueryObject with the specified elements removed from the
         /// current set of matching elements.
         /// </summary>
-        /// <param name="elements">The element to remove.</param>
+        /// <param name="elements">The elements to remove.</param>
         /// <returns>The new jQueryObject.</returns>
-        [ExpandParams]
         public jQueryObject Not(params Element[] elements) {
             return null;
         }
