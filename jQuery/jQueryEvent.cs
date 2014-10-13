@@ -28,6 +28,13 @@ namespace jQueryApi {
         }
 
         [IntrinsicProperty]
+		public bool MetaKey {
+            get {
+                return false;
+            }
+        }
+
+        [IntrinsicProperty]
         public bool Bubbles {
             get {
                 return false;
