@@ -152,6 +152,17 @@ namespace jQueryApi {
             set {
             }
         }
+        
+        /// <summary>
+        /// Gets or sets additional header key/value pairs to send along with requests using the XMLHttpRequest transport.
+        /// </summary>
+        public JsDictionary<string, string> Headers {
+    	    get {
+    	        return null;
+    	    }
+    	    set {
+    	    }
+        }
 
         /// <summary>
         /// Gets or sets whether the request is successful only if its been modified since
