@@ -95,7 +95,8 @@ namespace jQueryApi {
         /// <param name="callbacks">The callbacks to invoke (in order).</param>
         /// <returns>The current request object.</returns>
         [ExpandParams]
-        public jQueryDataHttpRequest<TData> Always(params Action<TData>[] callbacks) {
+        public jQueryDataHttpRequest<TData> Always(params AjaxCompletedCallback<TData>[] callbacks)
+        {
             return null;
         }
 
@@ -104,7 +105,9 @@ namespace jQueryApi {
         /// </summary>
         /// <param name="callback">The callback to invoke.</param>
         /// <returns>The current request object.</returns>
-        public jQueryDataHttpRequest<TData> Complete(AjaxCompletedCallback<TData> callback) {
+        [Obsolete("Deprecated since jQuery 1.8. Use Always() instead.")]
+        public jQueryDataHttpRequest<TData> Complete(AjaxCompletedCallback<TData> callback)
+        {
             return null;
         }
 
@@ -126,7 +129,8 @@ namespace jQueryApi {
         /// <param name="doneCallbacks">The callbacks to invoke (in order).</param>
         /// <returns>The current request object.</returns>
         [ExpandParams]
-        public jQueryDataHttpRequest<TData> Done(params Action<TData>[] doneCallbacks) {
+        public jQueryDataHttpRequest<TData> Done(params AjaxRequestCallback<TData>[] doneCallbacks)
+        {
             return null;
         }
 
@@ -135,7 +139,9 @@ namespace jQueryApi {
         /// </summary>
         /// <param name="callback">The callback to invoke.</param>
         /// <returns>The current request object.</returns>
-        public jQueryDataHttpRequest<TData> Error(AjaxErrorCallback<TData> callback) {
+        [Obsolete("Deprecated since jQuery 1.8. Use Fail() instead.")]
+        public jQueryDataHttpRequest<TData> Error(AjaxErrorCallback<TData> callback)
+        {
             return null;
         }
 
@@ -157,7 +163,8 @@ namespace jQueryApi {
         /// <param name="failCallbacks">The callbacks to invoke (in order).</param>
         /// <returns>The current request object.</returns>
         [ExpandParams]
-        public jQueryDataHttpRequest<TData> Fail(params Action<TData>[] failCallbacks) {
+        public jQueryDataHttpRequest<TData> Fail(params AjaxErrorCallback<TData>[] failCallbacks)
+        {
             return null;
         }
 
@@ -221,7 +228,9 @@ namespace jQueryApi {
         /// </summary>
         /// <param name="callback">The callback to invoke.</param>
         /// <returns>The current request object.</returns>
-        public jQueryDataHttpRequest<TData> Success(AjaxCallback<TData> callback) {
+        [Obsolete("Deprecated since jQuery 1.8. Use Done() instead.")]
+        public jQueryDataHttpRequest<TData> Success(AjaxCallback<TData> callback)
+        {
             return null;
         }
 
@@ -230,7 +239,9 @@ namespace jQueryApi {
         /// </summary>
         /// <param name="callback">The callback to invoke.</param>
         /// <returns>The current request object.</returns>
-        public jQueryDataHttpRequest<TData> Success(AjaxRequestCallback<TData> callback) {
+        [Obsolete("Deprecated since jQuery 1.8. Use Done() instead.")]
+        public jQueryDataHttpRequest<TData> Success(AjaxRequestCallback<TData> callback)
+        {
             return null;
         }
 

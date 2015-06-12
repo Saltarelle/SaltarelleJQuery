@@ -1,3 +1,4 @@
+1.10.1
 Work with both 2.x and 3.x versions of Saltarelle.Web
 Added jQuery.Select(Element) and string as an option for Data in jQueryAjaxOptions
 

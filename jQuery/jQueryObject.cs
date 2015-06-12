@@ -3017,8 +3017,8 @@ namespace jQueryApi {
         }
 
         /// <summary>
-        /// Gets a jQueryObject representing all the following sibling elements
-        /// of the matched set of elements.
+        /// Gets a jQueryObject representing all following siblings 
+        /// of each element in the set of matched elements.
         /// </summary>
         /// <returns>The new jQueryObject.</returns>
         public jQueryObject NextAll() {
@@ -3026,8 +3026,9 @@ namespace jQueryApi {
         }
 
         /// <summary>
-        /// Gets a jQueryObject representing all the following sibling elements
-        /// of the matched set of elements filtered by the specified selector.
+        /// Gets a jQueryObject representing all following siblings 
+        /// of each element in the set of matched elements
+        /// filtered by the specified selector.
         /// </summary>
         /// <param name="selector">The selector to match children against.</param>
         /// <returns>The new jQueryObject.</returns>
@@ -3036,12 +3037,50 @@ namespace jQueryApi {
         }
 
         /// <summary>
-        /// Gets a jQueryObject representing all the following sibling elements
-        /// of the matched set of elements while they match the specified selector.
+        /// Gets a jQueryObject representing all following siblings 
+        /// of each element up to but not including the element 
+        /// matched by the selector.
         /// </summary>
-        /// <param name="selector">The selector to match children against.</param>
+        /// <param name="selector">The selector to indicate where to stop matching following sibling elements.</param>
         /// <returns>The new jQueryObject.</returns>
-        public jQueryObject NextUntil([SyntaxValidation("cssSelector")] string selector) {
+        public jQueryObject NextUntil([SyntaxValidation("cssSelector")] string selector)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Gets a jQueryObject representing all following siblings 
+        /// of each element up to but not including the element 
+        /// matched by the selector.
+        /// </summary>
+        /// <param name="selector">The selector to indicate where to stop matching following sibling elements.</param>
+        /// <param name="filter">The selector to match elements against.</param>
+        /// <returns>The new jQueryObject.</returns>
+        public jQueryObject NextUntil([SyntaxValidation("cssSelector")] string selector, [SyntaxValidation("cssSelector")] string filter)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Gets a jQueryObject representing all following siblings 
+        /// of each element up to but not including the element.
+        /// </summary>
+        /// <param name="element">The selector to indicate where to stop matching following sibling elements.</param>
+        /// <returns>The new jQueryObject.</returns>
+        public jQueryObject NextUntil(TypeOption<jQueryObject, Element> element)
+        {
+            return null;
+        }
+
+        /// <summary>
+        /// Gets a jQueryObject representing all following siblings 
+        /// of each element up to but not including the element.
+        /// </summary>
+        /// <param name="element">The element indicating where to stop matching following sibling elements.</param>
+        /// <param name="filter">The selector to match elements against.</param>
+        /// <returns>The new jQueryObject.</returns>
+        public jQueryObject NextUntil(TypeOption<jQueryObject, Element> element, [SyntaxValidation("cssSelector")] string filter)
+        {
             return null;
         }
 
@@ -3631,7 +3670,8 @@ namespace jQueryApi {
         /// </summary>
         /// <param name="attributeName">The attribute to remove.</param>
         /// <returns>The current jQueryObject.</returns>
-        public jQueryObject RemoveAttr(string attributeName) {
+        [ScriptName("removeAttr")]
+        public jQueryObject RemoveAttribute(string attributeName) {
             return null;
         }
 
